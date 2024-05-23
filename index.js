@@ -125,6 +125,7 @@ app.post('/process', async (req, res) => {
     const { imageUrl } = req.body;
     console.log(imageUrl);
 
+    return;
     if (!imageUrl) {
         return res.status(400).json({ error: 'Image URL not provided' });
     }
