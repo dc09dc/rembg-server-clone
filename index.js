@@ -11,7 +11,7 @@ const app = express();
 const PORT = 3005;
 const processedImagesDir = path.join(__dirname, 'processed_images');
 
-const getServerImageUrl = (imageFileName) => `http://localhost:${PORT}/images/${imageFileName}`;
+const getServerImageUrl = (imageFileName) =>  `https://rembg-server-clone.onrender.com:${PORT}/images/${imageFileName}` // `http://localhost:${PORT}/images/${imageFileName}`;
 
 // Create the 'processed_images' folder if it doesn't exist
 if (!fs.existsSync(processedImagesDir)) {
