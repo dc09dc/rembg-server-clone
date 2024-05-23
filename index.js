@@ -157,5 +157,5 @@ app.post('/process', async (req, res) => {
 app.use('/images', express.static(processedImagesDir));
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is dc running on http://localhost:${PORT}`);
 });
